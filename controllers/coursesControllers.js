@@ -3,7 +3,7 @@ import { handleError } from "../utils/handleError.js";
 
 export const getAllCourse = async (req, res, next) => {
   try {
-    if (courses.length < 0) {
+    if (courses.length > 0) {
       return res.status(200).json(courses);
     }
 
@@ -20,7 +20,7 @@ export const getCourseById = async (req, res, next) => {
     if (course) {
       return res.status(200).json(course);
     } else {
-      throw handleError("No Course Found with is id", 404);
+      throw handleError(`No Course Found with id ${courseId}`, 404);
     }
   } catch (error) {
     next(error);
