@@ -1,8 +1,13 @@
 import { courses } from "../utils/courses.js";
+import { handleError } from "../utils/handleError.js";
 
 export const getAllCourse = async (req, res, next) => {
   try {
-    res.status(200).json(courses);
+    if (courses.length < 0) {
+      return res.status(200).json(courses);
+    }
+
+    throw handleError("No Course Found", 400);
   } catch (error) {
     next(error);
   }
@@ -15,7 +20,7 @@ export const getCourseById = async (req, res, next) => {
     if (course) {
       return res.status(200).json(course);
     } else {
-      return res.status(200).json({ message: "No Course Found" });
+      throw handleError("No Course Found with is id", 404);
     }
   } catch (error) {
     next(error);
