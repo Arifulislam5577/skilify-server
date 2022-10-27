@@ -11,7 +11,7 @@ export const getAllCourse = async (req, res, next) => {
 export const getCourseById = async (req, res, next) => {
   const courseId = req.params.id;
   try {
-    const course = await courses.find((course) => course.id === courseId);
+    const course = courses.find((course) => course.id.toString() === courseId);
     if (course) {
       return res.status(200).json(course);
     } else {
