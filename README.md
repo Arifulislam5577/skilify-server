@@ -1,4 +1,4 @@
-## ✅SKILIFY SERVER SIDE
+## -SKILIFY SERVER SIDE
 
 ---
 
@@ -8,21 +8,21 @@ Skilly is a online learning platform. Anyone can learn there favourite topic fro
 
 ##### ☑️USED TECHNOLOGY
 
-✅ React
-✅ React Router Dom
-✅ Tailwind CSS
-✅ Firebase
-✅ React Icons
-✅ Axios
-✅ Node Js
-✅ ExpressJS
+- React
+- React Router Dom
+- Tailwind CSS
+- Firebase
+- React Icons
+- Axios
+- Node Js
+- ExpressJS
 
 ##### ☑️BACKEND FEATURE
 
-✅ I will use MVC(Model,View,Controller) design pattern
-✅ There are simple two route in the backend server
-✅ `/api/v1/course` get all the course from server with get http method
-✅ If we try to access a single course from server then we need to pass a parameter with different route
-✅ `/api/v1/course/:id` get a single course from server with get http method
+- I will use MVC(Model,View,Controller) design pattern
+- There are simple two route in the backend server
+- `/api/v1/course` get all the course from server with get http method
+- If we try to access a single course from server then we need to pass a parameter with different route
+- `/api/v1/course/:id` get a single course from server with get http method
 
 `THANK YOU`
